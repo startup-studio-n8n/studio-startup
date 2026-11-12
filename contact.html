@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clay Cup | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Clay Cup, home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" role="img" aria-label="Clay Cup"><g transform="translate(6,8)"><path d="M4 10 H32 V30 Q32 44 18 44 Q4 44 4 30 Z" fill="#B5562F"/><path d="M32 16 Q42 16 42 24 Q42 33 31 33" fill="none" stroke="#B5562F" stroke-width="4" stroke-linecap="round"/><path d="M10 6 Q13 2 10 -2" fill="none" stroke="#E9C9A8" stroke-width="2" stroke-linecap="round"/><path d="M18 6 Q21 2 18 -2" fill="none" stroke="#E9C9A8" stroke-width="2" stroke-linecap="round"/><ellipse cx="18" cy="10" rx="14" ry="3" fill="#7A3B22"/></g><text x="62" y="36" font-family="Fraunces, Georgia, serif" font-size="26" font-weight="600" fill="#3A2A22">Clay Cup</text></svg>
+      </a>
+      <nav aria-label="Main menu">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-title">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="section-intro">Have a question about an order, a mug or a partnership with your coffee shop? Write to us and we will get back to you soon.</p>
+        <form class="form" action="mailto:contact@example.com" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Clay Cup. Handmade mugs for personal coffee moments, made in Lyon.</p>
+    </div>
+  </footer>
+</body>
+</html>
