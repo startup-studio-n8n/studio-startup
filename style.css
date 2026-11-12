@@ -59,7 +59,8 @@ h2 {
   font-size: clamp(1.875rem, 4vw, 3rem);
 }
 
-h3 {
+h3,
+.card-title {
   font-size: 1.5rem;
   line-height: 1.2;
 }
@@ -102,6 +103,10 @@ a:hover {
 
 .section-intro {
   max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.section--sand .section-title {
   margin-bottom: 48px;
 }
 
@@ -246,7 +251,8 @@ a:hover {
   box-shadow: 0 12px 28px rgba(58, 42, 34, 0.12);
 }
 
-.card h3 {
+.card h3,
+.card-title {
   margin-bottom: 12px;
 }
 
@@ -270,17 +276,13 @@ a:hover {
   font-weight: 600;
 }
 
-.price {
+.card .price {
+  flex: 0 0 auto;
   margin-top: 24px;
   font-family: var(--font-heading);
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--color-accent);
-}
-
-.card .button {
-  align-self: flex-start;
-  margin-top: 24px;
 }
 
 /* ---------- Call to action ---------- */
@@ -317,6 +319,10 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   padding-bottom: 96px;
+}
+
+.column {
+  max-width: 520px;
 }
 
 /* ---------- Contact form ---------- */
